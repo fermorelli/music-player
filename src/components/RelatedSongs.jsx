@@ -1,9 +1,6 @@
 import SongBar from './SongBar';
 
 const RelatedSongs = ({ data, artistId, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => {
-  console.log(data);
-  // const arr = [data.data[0]];
-  // console.log(arr);
   return (
     <div className="flex flex-col">
       <h1 className="font-bold text-3xl text-white">Related Songs:</h1>

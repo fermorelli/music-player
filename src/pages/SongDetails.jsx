@@ -7,6 +7,8 @@ const SongDetails = () => {
   const { songid } = useParams();
   const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery({ songid });
 
+  console.log('song data: ', songData);
+
   if (isFetchingSongDetails) return <Loader title="Searching song details" />;
 
   return (
